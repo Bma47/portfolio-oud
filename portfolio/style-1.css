@@ -1,0 +1,618 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Merienda&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+    font-family: 'Merienda';
+
+}
+
+
+
+header {
+    background-color: #178194;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px ;  
+    opacity: 0.9; 
+    z-index: 2;
+}
+
+header span{
+    color: #fff;
+}
+
+.text-container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+  
+  .moving-text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 0;
+    margin-top: -150px;
+    overflow: hidden;
+  z-index: 1;
+    font-size: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: move-back-forth 10s ease-in-out infinite;
+  }
+  
+  @keyframes move-back-forth {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(600px);
+    }
+    75 {
+        transform: translateX(0);
+      }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .logo {
+    width: 100px; /* set the width of the logo container */
+  }
+  
+  .logo img {
+    width: 100%; /* make the logo image fill its container */
+    transition: transform 1s ease-in-out; /* set the transition effect */
+  }
+  
+  .logo:hover img {
+    transform: rotateY(380deg); /* set the rotation animation */
+  }
+
+#dragonNews{
+    color: #601cfc;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Delicious Handrawn', cursive;
+font-family: 'Merienda', cursive;
+
+}
+
+
+.navigation a{
+    color: #178194;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+    font-family: 'Delicious Handrawn', cursive;
+font-family: 'Merienda', cursive;
+    justify-content:space-between ;
+}
+
+.navigation a:hover{
+    color: #601cfc;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    
+    width: 100%;
+    min-height: 195vh;
+    display: flex;
+    align-items: center;
+/* background-image: ; */
+background-repeat: no-repeat;
+background: rgba(0, 0, 0, 0.5) url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+background-position: center top;
+animation: moveDown 10s linear infinite;
+}
+.arduino-main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5) url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+background-position: center top;
+animation: moveDown 10s linear infinite;
+
+}
+@keyframes moveDown {
+    0% {
+      background-position-y: 0%;
+    }
+    100% {
+      background-position-y: 100%;
+    }
+  }
+.main h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 40px;
+    padding-right: 30px;
+}
+.social-icons a:hover {
+    color: rgb(255, 0, 0);
+    font-size: 45px;
+    padding-right: 30px;
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #178194;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: #178194;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3{
+    color: #178194;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects {
+    background-color: #000016;
+}
+
+.projects .content{
+    margin-top: 30px;
+       
+
+}
+
+.project-card {
+    
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 15em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+   transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.7;
+ }
+
+.project-image img{
+    width: 100%
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.more-details:hover {
+    color: #601cfc;
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: #000;
+}
+
+.contact .info p {
+    font-size: 1.5em;
+}
+ul{
+    }
+    ul li{
+    display: inline-block;
+    position: relative;
+    
+    }
+    ul li a{
+    display: block;
+    text-align: center;
+
+    
+    }
+    
+    ul li ul.dropdown li{
+    display: block;
+    border-radius: 20px;    
+    }
+    ul li ul.dropdown {
+    position: absolute;
+    z-index: 999;
+    background-color: #178194;
+    display: none;
+    
+    }
+    
+    ul li:hover ul.dropdown{
+    display: block;
+    
+    }
+/* 
+.footer {
+    height: 50vh;
+    background-color: #178194;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-title {
+    
+    text-align: center;
+  
+    font-size: 1.9em;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color:#4e9eff;
+}
+
+.footer .social-icons a{
+
+ font-size: 1.9em;
+    padding: 0 12px 0 0;
+} */
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .moving-text{
+    display: none;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+    .moving-text{
+        display: none;
+        }
+    
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+}
+
+nav ul{
+    
+    float: right;
+}	
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+
+
+.navigation a{
+    color: #178194;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 1rem;
+    border-radius: 10%;
+    margin-left: 0px;
+    
+}
+.navigation ul{
+    float: left;
+    margin-right: 30px;
+ 
+}
+.navigation ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    
+}
+.navigation ul li a {
+    letter-spacing: 2px;
+   color: #fbff00;
+  font-size: 20px;
+  font-weight: 700;
+   border-radius: 25px;
+   
+}   
+.navigation{
+    transition: 0.7s ease;
+    text-transform: uppercase;
+    font-family: 'Delicious Handrawn', cursive;
+font-family: 'Merienda', cursive;
+    }
+
+
+
+.navigation a:hover{
+    color: #ffffff;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.3);  
+     transform: scale(0.88);
+    transform: 0.3s;
+}
+
+.navigation a:active
+{
+      border-radius: 25px;
+    transform: 0.3s;
+}
+.checkbtn{
+
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px ;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    
+}
+#check{
+display: none;
+
+    
+}
+@media (max-width: 952px){
+label.logo{
+font-size: 30px;
+padding-left: 50px;
+
+}
+nav ul li a{
+    display: flex;
+    flex-direction: row;
+    font-size:30px;
+    text-align: center;
+    align-items: center;
+   justify-items: center;
+    justify-content: center;
+
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 999;
+        background-color: #000000;
+        top: 100px;
+        left: -100%;
+        
+        transition: all .5s;
+    }
+    
+    nav ul li {
+        position: relative;
+
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+        text-align: center;
+        align-items: center;
+       justify-items: center;
+        justify-content: space-between;
+    }
+    a:hover,a.active{
+        padding: 10px;
+        font-size: 20px;
+        background: none;
+        text-align: center;
+        align-items: center;
+       justify-items: center;
+        justify-content: center;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+    ul li i {
+   margin: 10px;
+    }
+
+
+   ul{
+list-style: none;
+background-color: #000;
+}
+ul li{
+display: inline-block;
+position: relative;
+
+}
+ul li a{
+display: block;
+padding: 20px 25px;
+text-align: center;
+
+}
+
+ul li ul.dropdown li{
+display: block;
+
+}
+ul li ul.dropdown {
+width: 100%;
+background: #0a49f6;
+position: absolute;
+z-index: 999;
+display: none;
+
+}
+
+ul li:hover ul.dropdown{
+display: block;
+
+
+}
+
+
+
